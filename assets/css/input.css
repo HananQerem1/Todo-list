@@ -43,3 +43,43 @@
     }
 }
 
+@layer utilities{
+    .row-start{
+        @apply flex justify-start items-center;
+    }
+    .row-between{
+        @apply flex justify-between items-center;
+    }
+    .row-end{
+        @apply flex justify-end items-center;
+    }
+    .column{
+        @apply flex flex-col items-start;
+    }
+    .center{
+        @apply flex items-center justify-center;
+    }
+    .placeholder-full-des{
+        @apply bg-bg text-[16px] text-secondary rounded-2xl p-1 sm:p-2 outline-0 focus:border-info/80 w-full;
+    }
+}
+
+@layer components{
+    .button-primary{
+        background: var(--color-info);
+        @apply text-fg rounded-full py-2 gap-0.5 w-[60%] sm:w-[25%] lg:w-[15%] px-1 transition hover:opacity-90;
+        @apply text-[13px] sm:text-[15px] md:text-[16px];
+    }
+    .button-secondary{
+        background: var(--color-fg);
+        @apply rounded-full py-2 gap-1 transition hover:opacity-90;
+        @apply text-[14px] sm:text-[15px] md:text-[16px];
+    }
+    .panel-fg{
+        @apply bg-fg gap-2 p-5 rounded-2xl border border-gray-300 w-full;
+    }
+    .panel-bg{
+        @apply bg-bg rounded-2xl w-full border border-gray-300;
+    }
+}
+

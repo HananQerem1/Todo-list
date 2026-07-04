@@ -10,6 +10,37 @@
     <title>Todo-List</title>
 </head>
 <body>
-    
+    <main>
+        <section class="container column gap-10 w-full">
+            <div class="row-start gap-4 w-full">
+                <div class="bg-info rounded-3xl">
+                    <img src="./assets/img/icons/to-do.svg" alt="to-do icon" class="size-15 p-3" />
+                </div>
+                <div class="column w-full">
+                    <h1>my todo list</h1>
+                    <div class="row-start gap-2">
+                        <span>2 remaining</span>
+                        <span>-</span>
+                        <span>1 done</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column gap-3 w-full">
+                <div class="panel-fg">
+                    <form name="addTask" class="w-full row-start gap-1">
+                        <input id="taskName" type="text" name="taskName" placeholder="new task..." class="placeholder-full-des panel-bg"/>
+                        <button type="submit" class="button-primary row-start center addTaskBtn">
+                            <img src="./assets/img/icons/plus.svg" alt="plus icon" class="size-5 sm:size-7"/>
+                            add task
+                        </button>
+                    </form>
+                </div>
+                <div class="task-container w-full">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./main.js"></script>
 </body>
 </html>
