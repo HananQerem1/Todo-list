@@ -1,5 +1,2 @@
 # Dependencies
 node_modules/
-
-# Generated CSS output
-assets/css/output.css
