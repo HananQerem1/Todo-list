@@ -42,6 +42,10 @@
     span{
         @apply text-secondary text-[15px] capitalize;
     }
+    p{
+        @apply text-secondary capitalize;
+        @apply text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px]; 
+    }
 }
 
 @layer utilities{
@@ -56,6 +60,9 @@
     }
     .column{
         @apply flex flex-col items-start;
+    }
+    .column-center{
+        @apply flex flex-col items-center;
     }
     .center{
         @apply flex items-center justify-center;
